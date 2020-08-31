@@ -1,3 +1,6 @@
+body{
+    color: black;
+}
 .blogTite {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
@@ -12,34 +15,65 @@
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
-    display: flex;
-	justify-content: space-between;
 }
 .blogContent{
 
 }
-#edit{
-	display: flex;
-	justify-content: space-around;
-	text-decoration: none;
-	color: white;
-	font-family: serif;
-	font-size: 19px;
-	border: 1px solid pink;
-	height: 30px;
-	width: 75px;
-	background-color: deeppink;
-	text-align: center;
-	padding-top: 6px;
-}
- #commentBox button{
-	height: 35px;
-	width: 95px;
-	margin-top: 5px;
-	background-color: deeppink;
-	border: 0px;
-	color: white;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.buttonstyle{
+    background-color: #e42c64;
+    height: 40px;
+    width: 70px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+#section1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.buttonLike{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    text-align: center;
+    cursor: pointer;
+}
+.buttonComment{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+.commentbox{
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+}
+.commentbox > div {
+    background-color: white;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 75px;
+    font-size: 25px;
+    padding: 10px 10px;
+}

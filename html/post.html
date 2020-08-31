@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+        <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>        
+    </style>
+</head>
+<body onload="myFunction()">
+<div id="main-container-div">
+    <div class="header">
+
+        <!-- Insert code for Sign Up, Sign In button here.
+             Add code for "ScriBBler" heading and the sub-heading -->
+        <a href="../index.html" class="logo">ScriBBler</a>
+        <div class="header-right">
+            <a id="signin" href="#contact" onclick="signinmodal();">Sign In</a>
+            <span></span>
+            <a id="signup" href="#home" onclick="signupmodal();">Sign Up</a>
+        </div>
+    </div>
+    <p class="subheader">Explore, Imagine, Create</p>
+</div>
+<div>
+
+    <!-- Insert code for Sign In modal here -->
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="close1" class="close">&times;</span>
+            <h2 class="title1">Welcome Back!</h2>
+            <hr size="4">
+            <form action="#" method="post">
+                <div>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" required>
+
+                    <button id="submit2">Sign In</button>
+                    <br>
+                    <b><span><p align="center">Not a member?&nbsp;<a id="memberoption" onclick="signupmodalMember();">Sign In</a></span></p></b>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- Insert code for Sign Up modal here -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close2" class="close">&times;</span>
+                <h2 class="title1">Get Started</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <label><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="cpass" required>
+                        <button id="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<section id="section1" class="section">
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+        <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+    </div>
+
+<div class="blogAuthor">
+
+    <!-- Insert code for Edit/Save button and  -->
+   <!-- <input type="button" class="" id="save" name="save" value="save">-->
+    <input type="button" class="buttonstyle" id="edit" name="edit" value="Edit" onclick="editContent();">
+    <input type="button" class="buttonstyle" id="save" name="save" value="Save" onclick="saveContent();">
+    <p class="postUserName">Srishti Gupta</p>
+</div>
+
+<div class="blogText">
+    <p id="blogBody" contenteditable="false">
+		Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which leads to confusion when discussing the code.
+	</p>
+</div>
+    </div>
+    <br/>
+    <!-- Insert code for Like button, Comment button, Comment box here-->
+    <input type="button" class="buttonLike" id="like" name="like" value="Like" onclick="likeAction();">
+    <p id="likeStatus">Be the first one to like this!</p>
+    <br>
+    <div>
+    <textarea id="commenttext" name="comment" placeholder="Leave a comment..."></textarea>
+    </div>
+    <input type="button" class="buttonComment" id="comment" name="comment" value="Comment" onclick="commentAction();">
+    <br>
+    <h3>All Comments</h3>
+    <section>
+    <div id="commentbox" class="commentbox">
+    </div>
+    </section>
+</section>
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">
+    </script>
+</body>
